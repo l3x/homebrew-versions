@@ -71,3 +71,19 @@ class Gdb < Formula
     EOS
   end
 end
+
+__END__
+diff --git a/gdb/darwin-nat.c b/gdb/darwin-nat.c
+index a21bb0f..3144dd4 100644
+--- a/gdb/darwin-nat.c
++++ b/gdb/darwin-nat.c
+@@ -42,7 +42,7 @@
+ 
+ #include <sys/ptrace.h>
+ #include <sys/signal.h>
+-#include <machine/setjmp.h>
++#include <setjmp.h>
+ #include <sys/types.h>
+ #include <unistd.h>
+ #include <signal.h>
+
